@@ -1,0 +1,11 @@
+C:\Users\amir.bunjo\source\repos\Biblioteka.DAL\Biblioteka.DAL\bin\Debug\netcoreapp2.1\Biblioteka.DAL.deps.json
+C:\Users\amir.bunjo\source\repos\Biblioteka.DAL\Biblioteka.DAL\bin\Debug\netcoreapp2.1\Biblioteka.DAL.dll
+C:\Users\amir.bunjo\source\repos\Biblioteka.DAL\Biblioteka.DAL\obj\Debug\netcoreapp2.1\Biblioteka.DAL.csprojAssemblyReference.cache
+C:\Users\amir.bunjo\source\repos\Biblioteka.DAL\Biblioteka.DAL\obj\Debug\netcoreapp2.1\Biblioteka.DAL.csproj.CoreCompileInputs.cache
+C:\Users\amir.bunjo\source\repos\Biblioteka.DAL\Biblioteka.DAL\obj\Debug\netcoreapp2.1\Biblioteka.DAL.AssemblyInfoInputs.cache
+C:\Users\amir.bunjo\source\repos\Biblioteka.DAL\Biblioteka.DAL\obj\Debug\netcoreapp2.1\Biblioteka.DAL.AssemblyInfo.cs
+C:\Users\amir.bunjo\source\repos\Biblioteka.DAL\Biblioteka.DAL\bin\Debug\netcoreapp2.1\Biblioteka.DAL.runtimeconfig.json
+C:\Users\amir.bunjo\source\repos\Biblioteka.DAL\Biblioteka.DAL\bin\Debug\netcoreapp2.1\Biblioteka.DAL.runtimeconfig.dev.json
+C:\Users\amir.bunjo\source\repos\Biblioteka.DAL\Biblioteka.DAL\bin\Debug\netcoreapp2.1\Biblioteka.DAL.pdb
+C:\Users\amir.bunjo\source\repos\Biblioteka.DAL\Biblioteka.DAL\obj\Debug\netcoreapp2.1\Biblioteka.DAL.dll
+C:\Users\amir.bunjo\source\repos\Biblioteka.DAL\Biblioteka.DAL\obj\Debug\netcoreapp2.1\Biblioteka.DAL.pdb
