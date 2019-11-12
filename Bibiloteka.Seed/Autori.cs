@@ -21,6 +21,8 @@ namespace Biblioteka.Seeder
                 Autor a = new Autor
                 {
                     Ime = rawData.ReadString(row, 2),
+                    Prezime = rawData.ReadString(row,3),
+                    Biografija = rawData.ReadString(row,4),
                     Email = rawData.ReadString(row, 6)
                 };
                 unit.Autori.Insert(a);

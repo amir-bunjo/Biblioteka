@@ -1,0 +1,48 @@
+﻿@model KnjigaModel
+
+
+
+@{
+    ViewData["Title"] = "View1";
+}
+
+<h4 class="text-center">Dodaj Novu Knjigu</h4>
+<hr />
+<div class="row justify-content-center">
+    <div class="col-md-6 ">
+        <form asp-action="SaveNew">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Naslov" class="control-label"></label>
+                <input asp-for="Naslov" class="form-control" />
+                <span asp-validation-for="Naslov" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Cijena" class="control-label"></label>
+                <input asp-for="Cijena" class="form-control" />
+                <span asp-validation-for="Cijena" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Izdavac" class="control-label"></label>
+                @Html.DropDownListFor(m => m.Izdavac, new SelectList(Model.listaSvihIzdavaca, "Value", "Text"),
+         "- Odaberi izdavaca -", new { @class = "selectpicker form-control", })
+            </div>
+            <div class="form-group">
+                <label asp-for="Autori" class="control-label">Autori (* hold ctrl to select multiple authors)</label>
+                @Html.DropDownListFor(m => m.Autori, new MultiSelectList(Model.listaSvihAutora, "Value", "Text"),
+         "- Odaberi autore -", new { multiple = "multiple", @class = "form-control"})
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts { 
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
+}

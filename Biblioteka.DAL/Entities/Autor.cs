@@ -16,7 +16,7 @@ namespace Biblioteka.DAL.Entities
         public string Ime { get; set; }
         public string Prezime { get; set; }
         public string Email { get; set; }
-        public string Adresa { get; set; }
+        public string Biografija { get; set; }
         public virtual IList<AutorKnjiga> Knjige { get; set; }
 
     }

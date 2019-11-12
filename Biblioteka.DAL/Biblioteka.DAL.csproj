@@ -16,6 +16,8 @@
   <ItemGroup>
     <Compile Include="Migrations\20191108112624_initialDb.cs" />
     <Compile Include="Migrations\20191108112624_initialDb.Designer.cs" />
+    <Compile Include="Migrations\20191112091054_second.cs" />
+    <Compile Include="Migrations\20191112091054_second.Designer.cs" />
     <Compile Include="Migrations\LibContextModelSnapshot.cs" />
   </ItemGroup>
 

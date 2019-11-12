@@ -1,0 +1,49 @@
+﻿@model IEnumerable<Biblioteka.DAL.Entities.Knjiga>
+
+@{
+    ViewData["Title"] = "Knjige";
+}
+
+<h1 class="text-center">Knjige</h1>
+
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Naslov)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cijena)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Izdavac)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Naslov)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cijena)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Izdavac.Ime)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.kId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.kId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.kId">Delete</a>
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>

@@ -24,7 +24,7 @@ namespace Biblioteka.DAL.Migrations
                     b.Property<int>("aId")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<string>("Adresa");
+                    b.Property<string>("Biografija");
 
                     b.Property<string>("Email");
 
