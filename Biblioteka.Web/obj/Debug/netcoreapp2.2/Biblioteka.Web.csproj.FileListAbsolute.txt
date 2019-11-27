@@ -28,8 +28,6 @@ C:\Users\amir.bunjo\source\repos\Biblioteka.DAL\Biblioteka.Web\obj\Debug\netcore
 C:\Users\amir.bunjo\source\repos\Biblioteka.DAL\Biblioteka.Web\obj\Debug\netcoreapp2.2\Biblioteka.Web.dll
 C:\Users\amir.bunjo\source\repos\Biblioteka.DAL\Biblioteka.Web\obj\Debug\netcoreapp2.2\Biblioteka.Web.pdb
 C:\Users\amir.bunjo\source\repos\Biblioteka.DAL\Biblioteka.Web\obj\Debug\netcoreapp2.2\Biblioteka.Web.csproj.CopyComplete
-C:\Users\amir.bunjo\source\repos\Biblioteka.DAL\Biblioteka.Web\bin\Debug\netcoreapp2.2\Biblioteka.DAL.dll
-C:\Users\amir.bunjo\source\repos\Biblioteka.DAL\Biblioteka.Web\bin\Debug\netcoreapp2.2\Biblioteka.DAL.pdb
 C:\Users\amir.bunjo\source\repos\Biblioteka.DAL\Biblioteka.Web\obj\Debug\netcoreapp2.2\Razor\Views\Knjige\Create.g.cshtml.cs
 C:\Users\amir.bunjo\source\repos\Biblioteka.DAL\Biblioteka.Web\obj\Debug\netcoreapp2.2\Razor\Views\Knjige\Edit.g.cshtml.cs
 C:\Users\amir.bunjo\source\repos\Biblioteka.DAL\Biblioteka.Web\obj\Debug\netcoreapp2.2\Razor\Views\Knjige\Details.g.cshtml.cs
@@ -42,3 +40,5 @@ C:\Users\amir.bunjo\source\repos\Biblioteka.DAL\Biblioteka.Web\obj\Debug\netcore
 C:\Users\amir.bunjo\source\repos\Biblioteka.DAL\Biblioteka.Web\obj\Debug\netcoreapp2.2\Razor\Views\Izdavaci\Index.g.cshtml.cs
 C:\Users\amir.bunjo\source\repos\Biblioteka.DAL\Biblioteka.Web\obj\Debug\netcoreapp2.2\Razor\Views\Knjige\Index.g.cshtml.cs
 C:\Users\amir.bunjo\source\repos\Biblioteka.DAL\Biblioteka.Web\obj\Debug\netcoreapp2.2\Razor\Views\Autori\Edit.g.cshtml.cs
+C:\Users\amir.bunjo\source\repos\Biblioteka.DAL\Biblioteka.Web\obj\Debug\netcoreapp2.2\Razor\Views\Account\Register.g.cshtml.cs
+C:\Users\amir.bunjo\source\repos\Biblioteka.DAL\Biblioteka.Web\obj\Debug\netcoreapp2.2\Razor\Views\Account\Login.g.cshtml.cs

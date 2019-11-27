@@ -2,17 +2,23 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Biblioteka.DAL;
+using Biblioteka.Web.DAL.Entities;
+using Biblioteka.Web.DAL.Repositories;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Biblioteka.Web.Controllers
 {
     public class BaseController : Controller
     {
-        private UnitOfWork _unit = new UnitOfWork();
+        protected readonly IRepository<Knjiga> Knjige;
+        protected readonly IRepository<Autor> Autori;
+        protected readonly IRepository<Izdavac> Izdavaci;
 
-        public UnitOfWork Unit => _unit ?? new UnitOfWork();
-
-
+        public BaseController(IRepository<Knjiga> repository, IRepository<Autor> repositoryA, IRepository<Izdavac> repositoryI)
+        {
+            Knjige = Knjige ?? repository;
+            Autori = Autori ?? repositoryA;
+            Izdavaci = Izdavaci ?? repositoryI;
+        }
     }
 }

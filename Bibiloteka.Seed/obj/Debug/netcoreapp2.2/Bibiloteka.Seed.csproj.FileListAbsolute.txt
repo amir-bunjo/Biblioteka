@@ -1,0 +1,14 @@
+C:\Users\amir.bunjo\source\repos\Biblioteka.DAL\Bibiloteka.Seed\obj\Debug\netcoreapp2.2\Bibiloteka.Seed.csprojAssemblyReference.cache
+C:\Users\amir.bunjo\source\repos\Biblioteka.DAL\Bibiloteka.Seed\obj\Debug\netcoreapp2.2\Bibiloteka.Seed.csproj.CoreCompileInputs.cache
+C:\Users\amir.bunjo\source\repos\Biblioteka.DAL\Bibiloteka.Seed\obj\Debug\netcoreapp2.2\Bibiloteka.Seed.AssemblyInfoInputs.cache
+C:\Users\amir.bunjo\source\repos\Biblioteka.DAL\Bibiloteka.Seed\obj\Debug\netcoreapp2.2\Bibiloteka.Seed.AssemblyInfo.cs
+C:\Users\amir.bunjo\source\repos\Biblioteka.DAL\Bibiloteka.Seed\bin\Debug\netcoreapp2.2\Bibiloteka.Seed.deps.json
+C:\Users\amir.bunjo\source\repos\Biblioteka.DAL\Bibiloteka.Seed\bin\Debug\netcoreapp2.2\Bibiloteka.Seed.runtimeconfig.json
+C:\Users\amir.bunjo\source\repos\Biblioteka.DAL\Bibiloteka.Seed\bin\Debug\netcoreapp2.2\Bibiloteka.Seed.runtimeconfig.dev.json
+C:\Users\amir.bunjo\source\repos\Biblioteka.DAL\Bibiloteka.Seed\bin\Debug\netcoreapp2.2\Bibiloteka.Seed.dll
+C:\Users\amir.bunjo\source\repos\Biblioteka.DAL\Bibiloteka.Seed\bin\Debug\netcoreapp2.2\Bibiloteka.Seed.pdb
+C:\Users\amir.bunjo\source\repos\Biblioteka.DAL\Bibiloteka.Seed\obj\Debug\netcoreapp2.2\Bibiloteka.Seed.csproj.CopyComplete
+C:\Users\amir.bunjo\source\repos\Biblioteka.DAL\Bibiloteka.Seed\obj\Debug\netcoreapp2.2\Bibiloteka.Seed.dll
+C:\Users\amir.bunjo\source\repos\Biblioteka.DAL\Bibiloteka.Seed\obj\Debug\netcoreapp2.2\Bibiloteka.Seed.pdb
+C:\Users\amir.bunjo\source\repos\Biblioteka.DAL\Bibiloteka.Seed\bin\Debug\netcoreapp2.2\Biblioteka.DAL.dll
+C:\Users\amir.bunjo\source\repos\Biblioteka.DAL\Bibiloteka.Seed\bin\Debug\netcoreapp2.2\Biblioteka.DAL.pdb

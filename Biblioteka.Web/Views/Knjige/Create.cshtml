@@ -28,7 +28,7 @@
          "- Odaberi izdavaca -", new { @class = "selectpicker form-control", })
             </div>
             <div class="form-group">
-                <label asp-for="Autori" class="control-label">Autori (* hold ctrl to select multiple authors)</label>
+                <label asp-for="Autori" class="control-label">Autori (* koristi ctrl za odabir vise autora)</label>
                 @Html.DropDownListFor(m => m.Autori, new MultiSelectList(Model.listaSvihAutora, "Value", "Text"),
          "- Odaberi autore -", new { multiple = "multiple", @class = "form-control"})
             </div>

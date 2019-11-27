@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Biblioteka.DAL.Entities;
+using Biblioteka.Web.DAL.Entities;
+using Biblioteka.Web.DAL.Repositories;
 using Biblioteka.Web.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -11,23 +12,27 @@ namespace Biblioteka.Web.Controllers
 {
     public class AutoriController : BaseController
     {
+        public AutoriController(IRepository<Knjiga> repository, IRepository<Autor> repositoryA, IRepository<Izdavac> repositoryI)
+                                        : base(repository, repositoryA, repositoryI) { }
+
+
         public IActionResult Index()
         {
-            List<Autor> autori = Unit.Autori.Get().ToList();
-
+            List<Autor> autori = Autori.Get().ToList();
             return View(autori);
         }
 
         public IActionResult Delete(int id)
         {
-            Unit.Autori.Delete(id);
-            Unit.Save();
+            Autori.Delete(id);
+       
+            Autori.Save();
             return RedirectToAction("Index");
         }
 
         public IActionResult Details(int id)
         {
-            Autor autor = Unit.Autori.Get(id);
+            Autor autor = Autori.Get(id);
             return View(autor);
         }
 
@@ -35,12 +40,12 @@ namespace Biblioteka.Web.Controllers
         {
             //Autor autor = ;
 
-            return View(Unit.Autori.Get(id));
+            return View(Autori.Get(id));
         }
 
         public IActionResult Create()
         {
-            List<Knjiga> knjige = Unit.Knjige.Get().ToList();
+            List<Knjiga> knjige = new List<Knjiga>(); // Knjige.Get().ToList();
 
             AutorModel model = new AutorModel()
             {
@@ -58,13 +63,13 @@ namespace Biblioteka.Web.Controllers
         {
             if (autor.aId > 0)
             {
-                Unit.Autori.Update(autor, autor.aId);
+                Autori.Update(autor, autor.aId);
             }
             else
             {
-                Unit.Autori.Insert(autor);
+                Autori.Insert(autor);
             }
-            Unit.Save();
+            Autori.Save();
             return RedirectToAction("Index");
         }
 
@@ -78,18 +83,18 @@ namespace Biblioteka.Web.Controllers
                 Biografija = autorModel.Biografija
             };
 
-            Unit.Autori.Insert(autor);
-            Unit.Save();
-
+            Autori.Insert(autor);
+            Autori.Save();
+            /* implement later
             foreach (int knjigaId in autorModel.Knjige)
             {
-                Unit.AutorKnjiga.Insert(new AutorKnjiga()
+                AutorKnjiga.Insert(new AutorKnjiga()
                 {
                     Autor = autor,
-                    Knjiga = Unit.Knjige.Get(knjigaId)
+                    Knjiga = Knjige.Get(knjigaId)
                 });
             }
-            Unit.Save();
+            Save();*/
 
             return RedirectToAction("Index");
         }

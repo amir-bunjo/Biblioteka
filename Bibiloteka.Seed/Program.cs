@@ -12,16 +12,16 @@ namespace Bibiloteka.Seed
         {
             Console.WriteLine("Hello World!");
 
-
             FileInfo file = new FileInfo(@"C:\Library.xlsx");
             using (ExcelPackage package = new ExcelPackage(file))
             {
                 using (UnitOfWork unit = new UnitOfWork())
                 {
 
-                    unit.Context.Database.EnsureDeleted();
-                    unit.Context.Database.EnsureCreated();
+                   // unit.Context.Database.EnsureDeleted(); 
+                  //  unit.Context.Database.EnsureCreated();  command dont work on this version,explore more
 
+                  
                     Izdavaci.Collect(package.Workbook.Worksheets["Publishers"], unit);
                     Console.WriteLine("Publishers seeded, pres any key to continue loading books");
                     Console.ReadKey();

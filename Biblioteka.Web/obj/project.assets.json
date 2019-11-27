@@ -4742,19 +4742,6 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
-      },
-      "Biblioteka.DAL/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v2.1",
-        "dependencies": {
-          "Oracle.EntityFrameworkCore": "2.19.50"
-        },
-        "compile": {
-          "bin/placeholder/Biblioteka.DAL.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Biblioteka.DAL.dll": {}
-        }
       }
     }
   },
@@ -12987,21 +12974,16 @@
         "system.xml.xpath.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xpath.xdocument.nuspec"
       ]
-    },
-    "Biblioteka.DAL/1.0.0": {
-      "type": "project",
-      "path": "../Biblioteka.DAL/Biblioteka.DAL.csproj",
-      "msbuildProject": "../Biblioteka.DAL/Biblioteka.DAL.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.2": [
-      "Biblioteka.DAL >= 1.0.0",
       "Microsoft.AspNetCore.App >= 2.2.0",
       "Microsoft.AspNetCore.Razor.Design >= 2.2.0",
       "Microsoft.EntityFrameworkCore.Tools >= 2.2.6",
       "Microsoft.NETCore.App >= 2.2.0",
-      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.2.3"
+      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.2.3",
+      "Oracle.EntityFrameworkCore >= 2.19.50"
     ]
   },
   "packageFolders": {
@@ -13033,11 +13015,7 @@
       },
       "frameworks": {
         "netcoreapp2.2": {
-          "projectReferences": {
-            "C:\\Users\\amir.bunjo\\source\\repos\\Biblioteka.DAL\\Biblioteka.DAL\\Biblioteka.DAL.csproj": {
-              "projectPath": "C:\\Users\\amir.bunjo\\source\\repos\\Biblioteka.DAL\\Biblioteka.DAL\\Biblioteka.DAL.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
@@ -13075,6 +13053,10 @@
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "target": "Package",
             "version": "[2.2.3, )"
+          },
+          "Oracle.EntityFrameworkCore": {
+            "target": "Package",
+            "version": "[2.19.50, )"
           }
         },
         "imports": [

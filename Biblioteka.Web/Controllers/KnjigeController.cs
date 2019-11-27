@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Biblioteka.DAL;
-using Biblioteka.DAL.Entities;
+using Biblioteka.Web.DAL;
+using Biblioteka.Web.DAL.Entities;
+using Biblioteka.Web.DAL.Repositories;
 using Biblioteka.Web.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -12,38 +13,42 @@ namespace Biblioteka.Web.Controllers
 {
     public class KnjigeController : BaseController
     {
+ 
+
+        public KnjigeController(IRepository<Knjiga> repository, IRepository<Autor> repositoryA, IRepository<Izdavac> repositoryI)
+                                        : base(repository, repositoryA, repositoryI) { }
 
         public IActionResult Index()
         {
-            List<Knjiga> knjige = Unit.Knjige.Get().ToList();
+            List<Knjiga> knjige = Knjige.Get().ToList();
 
             return View(knjige);
         }
 
         public IActionResult Delete(int id)
         {
-            Unit.Knjige.Delete(id);
-            Unit.Save();
+            Knjige.Delete(id);
+            Knjige.Save();
             return RedirectToAction("Index");
         }
 
         public IActionResult Details(int id)
         {
-            Knjiga knjiga = Unit.Knjige.Get(id);
+            Knjiga knjiga = Knjige.Get(id);
             return View(knjiga);
         }
 
         public IActionResult Edit(int id)
         {
-            Knjiga knjiga = Unit.Knjige.Get(id);
+            Knjiga knjiga = Knjige.Get(id);
 
             return View(knjiga);
         }
 
         public IActionResult Create()
         {
-            List<Izdavac> izdavaci = Unit.Izdavaci.Get().ToList();
-            List<Autor> autori = Unit.Autori.Get().ToList();
+            List<Izdavac> izdavaci = Izdavaci.Get().ToList();
+            List<Autor> autori = Autori.Get().ToList();
 
             KnjigaModel model = new KnjigaModel()
             {
@@ -66,13 +71,13 @@ namespace Biblioteka.Web.Controllers
         {
             if (knjiga.kId > 0)
             {
-                Unit.Knjige.Update(knjiga, knjiga.kId);
+                Knjige.Update(knjiga, knjiga.kId);
             }
             else
             {
-                Unit.Knjige.Insert(knjiga);
+                Knjige.Insert(knjiga);
             }
-            Unit.Save();
+            Knjige.Save();
             return RedirectToAction("Index");
         }
 
@@ -84,11 +89,11 @@ namespace Biblioteka.Web.Controllers
                 kId = knjigaModel.kId,
                 Naslov = knjigaModel.Naslov ,
                 Cijena = knjigaModel.Cijena,
-                Izdavac = Unit.Izdavaci.Get(knjigaModel.Izdavac)
+                Izdavac = Izdavaci.Get(knjigaModel.Izdavac) 
             };
-            Unit.Knjige.Insert(knjiga);
-            Unit.Save();
-
+            Knjige.Insert(knjiga);
+            Knjige.Save();
+            /* implement later(add authbooksrepo :Irepos<authbooks>).. and add here 
             foreach(int autorId in knjigaModel.Autori)
             {
                 Unit.AutorKnjiga.Insert(new AutorKnjiga()
@@ -97,7 +102,7 @@ namespace Biblioteka.Web.Controllers
                     Knjiga = knjiga
                 });
             }
-            Unit.Save();
+            Knjige.Save();*/
             return RedirectToAction("Index");
         }
     }

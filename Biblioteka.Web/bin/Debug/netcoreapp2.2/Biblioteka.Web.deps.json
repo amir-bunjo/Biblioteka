@@ -24,12 +24,12 @@
     ".NETCoreApp,Version=v2.2": {
       "Biblioteka.Web/1.0.0": {
         "dependencies": {
-          "Biblioteka.DAL": "1.0.0",
           "Microsoft.AspNetCore.App": "2.2.0",
           "Microsoft.AspNetCore.Razor.Design": "2.2.0",
           "Microsoft.EntityFrameworkCore.Tools": "2.2.6",
           "Microsoft.NETCore.App": "2.2.0",
-          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.2.3"
+          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.2.3",
+          "Oracle.EntityFrameworkCore": "2.19.50"
         },
         "runtime": {
           "Biblioteka.Web.dll": {}
@@ -485,17 +485,6 @@
           "System.Reflection.Extensions": "4.3.0",
           "System.Resources.ResourceManager": "4.3.0",
           "System.Runtime": "4.3.0"
-        }
-      },
-      "Biblioteka.DAL/1.0.0": {
-        "dependencies": {
-          "Oracle.EntityFrameworkCore": "2.19.50"
-        },
-        "runtime": {
-          "Biblioteka.DAL.dll": {}
-        },
-        "compile": {
-          "Biblioteka.DAL.dll": {}
         }
       },
       "Microsoft.AspNet.WebApi.Client/5.2.6": {
@@ -3816,11 +3805,6 @@
       "sha512": "sha512-Yn/WfYe9RoRfmSLvUt2JerP0BTGGykCZkQPgojaxgzF2N0oPo+/AhB8TXOpdCcNlrG3VRtsamtK2uzsp3cqRVw==",
       "path": "system.linq.queryable/4.0.1",
       "hashPath": "system.linq.queryable.4.0.1.nupkg.sha512"
-    },
-    "Biblioteka.DAL/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
     },
     "Microsoft.AspNet.WebApi.Client/5.2.6": {
       "type": "package",

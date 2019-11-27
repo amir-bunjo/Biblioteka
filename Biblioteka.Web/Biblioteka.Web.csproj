@@ -6,6 +6,18 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Controllers\Register.cs" />
+    <Compile Remove="DAL\Repositories\AutorRepository.cs" />
+    <Compile Remove="DAL\Repositories\IKnjigaRepository.cs" />
+    <Compile Remove="DAL\Repositories\IzdavacRepository.cs" />
+    <Compile Remove="DAL\Repositories\KnjigaRepository.cs" />
+    <Compile Remove="DAL\Repositories\MockKnjigaRepository.cs" />
+    <Compile Remove="DAL\Repositories\Repository.cs" />
+    <Compile Remove="DAL\Repositories\SqlKnjigaRepository.cs" />
+    <Compile Remove="DAL\UnitOfWork.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Content Remove="Views\Knjige\Delete.cshtml" />
   </ItemGroup>
 
@@ -18,11 +30,24 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.3" />
+    <PackageReference Include="Oracle.EntityFrameworkCore" Version="2.19.50" />
   </ItemGroup>
 
 
-  <ItemGroup>
-    <ProjectReference Include="..\Biblioteka.DAL\Biblioteka.DAL.csproj" />
-  </ItemGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+    <TypeScriptTarget>ES3</TypeScriptTarget>
+    <TypeScriptJSXEmit>None</TypeScriptJSXEmit>
+    <TypeScriptModuleKind>None</TypeScriptModuleKind>
+    <TypeScriptCompileOnSaveEnabled>True</TypeScriptCompileOnSaveEnabled>
+    <TypeScriptNoImplicitAny>False</TypeScriptNoImplicitAny>
+    <TypeScriptRemoveComments>False</TypeScriptRemoveComments>
+    <TypeScriptOutFile />
+    <TypeScriptOutDir />
+    <TypeScriptGeneratesDeclarations>False</TypeScriptGeneratesDeclarations>
+    <TypeScriptNoEmitOnError>True</TypeScriptNoEmitOnError>
+    <TypeScriptSourceMap>True</TypeScriptSourceMap>
+    <TypeScriptMapRoot />
+    <TypeScriptSourceRoot />
+  </PropertyGroup>
 
 </Project>
