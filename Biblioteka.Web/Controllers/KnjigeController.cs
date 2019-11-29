@@ -6,11 +6,13 @@ using Biblioteka.Web.DAL;
 using Biblioteka.Web.DAL.Entities;
 using Biblioteka.Web.DAL.Repositories;
 using Biblioteka.Web.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace Biblioteka.Web.Controllers
 {
+    [Authorize(Roles = "Administrator,UserTest")]
     public class KnjigeController : BaseController
     {
  
@@ -25,6 +27,7 @@ namespace Biblioteka.Web.Controllers
             return View(knjige);
         }
 
+        [Authorize(Roles = "Administrator")]
         public IActionResult Delete(int id)
         {
             Knjige.Delete(id);
@@ -38,12 +41,14 @@ namespace Biblioteka.Web.Controllers
             return View(knjiga);
         }
 
+        [Authorize(Roles = "Administrator")]
         public IActionResult Edit(int id)
         {
             Knjiga knjiga = Knjige.Get(id);
 
             return View(knjiga);
         }
+
 
         public IActionResult Create()
         {
@@ -67,6 +72,7 @@ namespace Biblioteka.Web.Controllers
             return View(model);
         }
 
+        [Authorize(Roles = "Administrator")]
         public IActionResult Update(Knjiga knjiga)
         {
             if (knjiga.kId > 0)

@@ -42,3 +42,6 @@ C:\Users\amir.bunjo\source\repos\Biblioteka.DAL\Biblioteka.Web\obj\Debug\netcore
 C:\Users\amir.bunjo\source\repos\Biblioteka.DAL\Biblioteka.Web\obj\Debug\netcoreapp2.2\Razor\Views\Autori\Edit.g.cshtml.cs
 C:\Users\amir.bunjo\source\repos\Biblioteka.DAL\Biblioteka.Web\obj\Debug\netcoreapp2.2\Razor\Views\Account\Register.g.cshtml.cs
 C:\Users\amir.bunjo\source\repos\Biblioteka.DAL\Biblioteka.Web\obj\Debug\netcoreapp2.2\Razor\Views\Account\Login.g.cshtml.cs
+C:\Users\amir.bunjo\source\repos\Biblioteka.DAL\Biblioteka.Web\obj\Debug\netcoreapp2.2\Razor\Views\Account\Role.g.cshtml.cs
+C:\Users\amir.bunjo\source\repos\Biblioteka.DAL\Biblioteka.Web\obj\Debug\netcoreapp2.2\Razor\Views\Account\EditUsersInRole.g.cshtml.cs
+C:\Users\amir.bunjo\source\repos\Biblioteka.DAL\Biblioteka.Web\obj\Debug\netcoreapp2.2\Razor\Views\Account\RolesList.g.cshtml.cs

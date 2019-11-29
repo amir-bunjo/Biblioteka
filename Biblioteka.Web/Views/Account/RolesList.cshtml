@@ -1,0 +1,17 @@
+﻿@model List<RoleModel>
+
+@{
+    ViewData["Title"] = "View";
+   
+}
+
+<h1>View </h1>
+
+@{
+foreach(var role in Model){
+
+<p>Role name: @role.RoleName Role id: @role.RoleId</p>
+<a class="btn btn-primary" asp-action="EditUsersInRole" asp-route-RoleId="@role.RoleId"  asp-controller="Account">Add/Remove user for this role</a>
+}
+
+}

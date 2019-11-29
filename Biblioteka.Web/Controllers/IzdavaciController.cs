@@ -5,11 +5,13 @@ using System.Threading.Tasks;
 using Biblioteka.Web.DAL.Entities;
 using Biblioteka.Web.DAL.Repositories;
 using Biblioteka.Web.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace Biblioteka.Web.Controllers
 {
+    [Authorize(Roles = "Administrator,UserTest")]
     public class IzdavaciController : BaseController
     {
 
@@ -31,6 +33,7 @@ namespace Biblioteka.Web.Controllers
             return View(izdavaci);
         }
 
+        [Authorize(Roles = "Administrator")]
         public IActionResult Delete(int id)
         {
             Izdavaci.Delete(id);
@@ -44,12 +47,14 @@ namespace Biblioteka.Web.Controllers
             return View(izdavac);
         }
 
+        [Authorize(Roles = "Administrator")]
         public IActionResult Edit(int id)
         {
             Izdavac izdavac = Izdavaci.Get(id);
 
             return View(izdavac);
         }
+
 
         public IActionResult Create()
         {
@@ -67,6 +72,7 @@ namespace Biblioteka.Web.Controllers
             return View(model);
         }
 
+        [Authorize(Roles = "Administrator")]
         public IActionResult Update(Izdavac izdavac)
         {
             if (izdavac.Id > 0)

@@ -46,6 +46,8 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Izdavaci" asp-action="Index">Izdavaci</a>
                         </li>
+
+
                     </ul>
                     <ul class="navbar-nav ml-auto">
                         @*If the user is signed-in display Logout link*@
@@ -58,6 +60,14 @@
                                         Logout @User.Identity.Name
                                     </button>
                                 </form>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-controller="account" asp-action="role">
+                                    CreateRole
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="RolesList">Manage Roles</a>
                             </li>
                         }
                         else
